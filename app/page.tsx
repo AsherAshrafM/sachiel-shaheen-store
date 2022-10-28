@@ -8,7 +8,7 @@ export default function Page() {
     <div>
       <HeaderBanner />
       <NewUser />
-      {/* <PromoSection /> */}
+      <PromoSection />
       <ProductList />
     </div>
   );

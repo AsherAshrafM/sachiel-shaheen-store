@@ -36,7 +36,7 @@ const products = [
 
 export default function ProductList() {
   return (
-    <div className="bg-white z-40">
+    <div className="bg-white z-10">
       <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <h2 className="sr-only">Products</h2>
 

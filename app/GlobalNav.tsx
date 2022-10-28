@@ -135,10 +135,10 @@ export default function GlobalNav() {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="bg-white z-10">
+    <div className="bg-white z-50">
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
-        <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
+        <Dialog as="div" className="relative z-50 lg:hidden" onClose={setOpen}>
           <Transition.Child
             as={Fragment}
             enter="transition-opacity ease-linear duration-300"
@@ -276,7 +276,7 @@ export default function GlobalNav() {
         </Dialog>
       </Transition.Root>
 
-      <header className="relative bg-white z-10">
+      <header className="relative bg-white z-50">
         <p className="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
           Get free delivery on orders over $100
         </p>
