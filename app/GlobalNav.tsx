@@ -127,9 +127,21 @@ const navigation = {
   ],
 }
 
-function classNames(...classes) {
+// binding
+// https://bobbyhadz.com/blog/typescript-binding-element-implicitly-has-an-any-type
+
+// param
+// https://bobbyhadz.com/blog/typescript-parameter-implicitly-has-an-any-type
+
+function classNames(...classes: (string | object)[]) : string {
+// or
+// function classNames(...classes: string[]) : string {
   return classes.filter(Boolean).join(' ')
 }
+
+// function classNames(...classes: Array<string>) {
+//   return classes.filter(Boolean).join(' ')
+// }
 
 export default function GlobalNav() {
   const [open, setOpen] = useState(false)
